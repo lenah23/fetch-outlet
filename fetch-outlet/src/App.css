@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: #61dafb;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home-title, .posts-title{
+  font-size: 50px;
+}
+
+.home-title:hover, .posts-title:hover{
+  color: #b7e2ee;
+}
