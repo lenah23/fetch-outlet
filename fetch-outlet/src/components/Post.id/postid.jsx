@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import './postid.css'
 
 
 export default function PostId() {
@@ -14,7 +15,7 @@ export default function PostId() {
 
     return (<div>
         {post && (
-            <p>{post.body}</p>
+            <div className='comment'>{post.body}</div>
         )}
     </div>)
 }

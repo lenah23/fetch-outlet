@@ -11,8 +11,8 @@ export default function Posts() {
             .then(data => setPosts(data))
     }, [])
 
-    return (<>
-        <div>
+    return (<div className='container'>
+        <div className='posts'>
             <h1>Our posts</h1>
             {
                 posts.map(post => {
@@ -23,10 +23,10 @@ export default function Posts() {
                     )
                 })
             }
-            <div>
+           </div> 
+            <div className='comments'>
                 <Outlet />
             </div>
-        </div>
-    </>
+    </div>
     )
 }
